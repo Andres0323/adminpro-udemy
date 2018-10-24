@@ -1,3 +1,48 @@
-<p>
-  graficas1 works!
-</p>
+<!-- Nivel superior -->
+<div class="row">
+    <!-- Grafica1 -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Estadistica 1 </h3>
+
+                <app-grafica-dona [chartLabels]="graficos.grafico1.labels" [chartData]="graficos.grafico1.data" [chartType]="graficos.grafico1.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+    <!-- Grafica2 -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Estadistica 2 </h3>
+                <app-grafica-dona [chartLabels]="graficos.grafico2.labels" [chartData]="graficos.grafico2.data" [chartType]="graficos.grafico2.type"></app-grafica-dona>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Nivel inferior -->
+<div class="row">
+    <!-- Grafica3 -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Estadistica 3 </h3>
+
+                <app-grafica-dona [chartLabels]="graficos.grafico3.labels" [chartData]="graficos.grafico3.data" [chartType]="graficos.grafico3.type"></app-grafica-dona>
+
+            </div>
+        </div>
+    </div>
+    <!-- Grafica4 -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Estadistica 4 </h3>
+                <app-grafica-dona [chartLabels]="graficos.grafico4.labels" [chartData]="graficos.grafico4.data" [chartType]="graficos.grafico4.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+
+</div>
